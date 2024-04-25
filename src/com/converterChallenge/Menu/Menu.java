@@ -22,9 +22,7 @@ public class Menu {
              """);
 
 
-    while (option !=7)
-
-    {
+    while (option !=7) {
         System.out.println(menu);
         var selection = sc.nextLine();
         option = Integer.parseInt(selection);
