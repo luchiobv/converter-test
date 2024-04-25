@@ -6,6 +6,8 @@ public class Menu {
 
 
     Scanner sc = new Scanner(System.in);
+
+    do {
     public int option = 0;
     public String money = "";
     public String menu = (""" 
@@ -20,10 +22,7 @@ public class Menu {
              7. Exit
             ****************
              """);
-
-
-    while (option !=7) {
-        System.out.println(menu);
+ System.out.println(menu);
         var selection = sc.nextLine();
         option = Integer.parseInt(selection);
 
@@ -60,6 +59,9 @@ public class Menu {
                 System.out.println("Invalid Option");
                 break;
 
+}
+    while (option !=7) {
+       sc.close();
         }
     }
 
