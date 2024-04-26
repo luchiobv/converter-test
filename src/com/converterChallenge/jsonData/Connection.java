@@ -16,7 +16,7 @@ public class Connection {
     Menu conv = new Menu();
     String address = "https://v6.exchangerate-api.com/v6/8142735e21e6df86291da7b5/pair/" + conv.money;
     private Object baseCurrency;
-
+//try to connect and get the objects
     public Object conectionExchange(String baseCurrency, String targetCurrency, String rate, String moneyExchange) {
 
         HttpResponse<String> response = null;
