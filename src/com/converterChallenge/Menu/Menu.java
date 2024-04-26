@@ -22,46 +22,46 @@ public class Menu {
              """);
 
 
-    while (option !=7) {
-        System.out.println(menu);
-        var selection = sc.nextLine();
-        option = Integer.parseInt(selection);
+    //  while (option !=7) {
+    //   System.out.println(menu);
+    //  var selection = sc.nextLine();
+    //  option = Integer.parseInt(selection);
+//
 
-
-        switch (option) {
-            case 1:
-                System.out.println("Please enter the amount you want to convert: ");
-                money = "/USD/ARS/" + sc.nextLine();
-                break;
-            case 2:
-                System.out.println("Please enter the amount you want to convert: ");
-                money = "/ARS/USD/" + sc.nextLine();
-                break;
-            case 3:
-                System.out.println("Please enter the amount you want to convert: ");
-                money = "/USD/BRL/" + sc.nextLine();
-                break;
-            case 4:
-                System.out.println("Please enter the amount you want to convert: ");
-                money = "/BRL/USD/" + sc.nextLine();
-                break;
-            case 5:
-                System.out.println("Please enter the amount you want to convert: ");
-                money = "/USD/COP/" + sc.nextLine();
-                break;
-            case 6:
-                System.out.println("Please enter the amount you want to convert: ");
-                money = "/COP/USD/" + sc.nextLine();
-                break;
-            case 7:
-                System.out.println("Ending the program. Thank you very much for using our services");
-                break;
-            default:
-                System.out.println("Invalid Option");
-                break;
-
-        }
-    }
+    //    switch (option) {
+    //      case 1:
+    //          System.out.println("Please enter the amount you want to convert: ");
+    //          money = "/USD/ARS/" + sc.nextLine();
+    //          break;
+    //      case 2:
+    //          System.out.println("Please enter the amount you want to convert: ");
+    //          money = "/ARS/USD/" + sc.nextLine();
+    ////          break;
+    //    case 3:
+    //          System.out.println("Please enter the amount you want to convert: ");
+    //          money = "/USD/BRL/" + sc.nextLine();
+    //          break;
+    //      case 4:
+    //          System.out.println("Please enter the amount you want to convert: ");
+    //          money = "/BRL/USD/" + sc.nextLine();
+    //          break;
+    //      case 5:
+    //          System.out.println("Please enter the amount you want to convert: ");
+    //          money = "/USD/COP/" + sc.nextLine();
+    //          break;
+    //      case 6:
+    //          System.out.println("Please enter the amount you want to convert: ");
+    //          money = "/COP/USD/" + sc.nextLine();
+    //          break;
+    //      case 7:
+    //          System.out.println("Ending the program. Thank you very much for using our services");
+    //          break;
+    //      default:
+    //          System.out.println("Invalid Option");
+    //          break;
+//
+       // }
+//  }
 
     public int getOption() {
         return option;
@@ -85,5 +85,10 @@ public class Menu {
 
     public void setMenu(String menu) {
         this.menu = menu;
+    }
+
+    @Override
+    public String toString() {
+        return menu.toString();
     }
 }
